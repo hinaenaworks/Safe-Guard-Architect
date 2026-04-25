@@ -1,5 +1,19 @@
 # Safe-Guard-Architect
 
+このプロジェクトは、分散システムにおける二重送金問題を「状態遷移設計（State Machine）」によって物理的に解決することを目指した、銀行グレード送金APIの実装サンプルです。
+
+## 概要
+- **目的**: 高い同時実行性環境におけるトランザクション整合性の担保。
+- **解決した課題**: Race Condition, Zombie Records, TOCTOU.
+- **設計思想**:
+  - **不変ステートマシンの構築**: 状態を固定することで歴史的事実を保護。
+  - **悲観的ロックの先取り**: デッドロックを排除し、処理を原子化。
+
+## 状態遷移図
+![State Machine Diagram](layout.png)
+
+## ライセンス
+This project is licensed under the MIT License.
 **Protecting Business Logic in the Age of High-Efficiency AI.**
 
 AIはもはやコードを書くだけの存在ではありません。Claude Mythosのような次世代モデルは、人間のエンジニアが数十年放置してきた脆弱性すら一瞬で見抜きます。
