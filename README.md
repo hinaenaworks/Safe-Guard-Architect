@@ -33,7 +33,7 @@ AIが生成するコードには、しばしば「Race Condition（競合状態�
 
 ## なぜ「人間による論理監査」が必要か
 
-1.  **Context over Syntax**: AIは文法を理解しますが、君のビジネスルール（制約）を理解しません。
+1.  **Context over Syntax**: AIは文法を理解しますが、あなたのビジネスルール（制約）を理解しません。
 2.  **Defensive Architecting**: 高性能AIによる脆弱性スキャンを想定し、多重防壁（Logic Guard）を設計します。
 3.  **Truth Verification**: ハルシネーションを見抜き、真実に基づいたロジックのみを納品します。
 
