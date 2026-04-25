@@ -24,7 +24,7 @@ AIが生成するコードには、しばしば「Race Condition（競合状態�
 
 ## 実績・事例 (Logic Proof)
 
-[]
+![Audit Logic Diagram](Logic.png)
 
 * **Before**: AIが生成した脆弱なコード（論理欠陥あり）
 * **After**: 監査およびガードロジックの実装により堅牢化されたコード
